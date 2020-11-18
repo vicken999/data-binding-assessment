@@ -31,8 +31,7 @@ namespace FlagFacts
 
         private void InitializeData()
         {
-            country.ItemsSource = (IList) repository.Countries;
-            flagImage.Source = CurrentFlag.GetImageSource();
+            country.ItemsSource = (IList)repository.Countries;
 
             // Set the binding context
             this.BindingContext = CurrentFlag;
